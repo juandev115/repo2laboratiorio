@@ -1,4 +1,4 @@
-#Laboratorio 10/09/2025
+# Laboratorio 10/09/2025
 por: Juan Diego Hernández Castellanos 
      Syndi Pinilla
 
