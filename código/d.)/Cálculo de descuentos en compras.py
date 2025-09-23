@@ -1,6 +1,32 @@
-monto_compra = float(input("Ingrese el monto total de la compra: "))
-es_vip = input("¿Es usted miembro VIP? (True/False): ") == 'True'
-tiene_codigo = input("¿Tiene un código de descuento especial? (True/False): ") == 'True'
+compra_valida = False
+while not compra_valida:
+    dato = input("Ingrese el monto total de la compra: ")
+    if dato.replace(".", "", 1).isdigit():
+        monto_compra = float(dato)
+        if monto_compra >= 0:
+            compra_valida = True
+        else:
+            print("El monto no puede ser negativo.")
+    else:
+        print("Entrada inválida. Ingrese un número válido.")
+
+vip_valido = False
+while not vip_valido:
+    dato = input("¿Es usted miembro VIP? (True/False): ")
+    if dato == "True" or dato == "False":
+        es_vip = (dato == "True")
+        vip_valido = True
+    else:
+        print("Entrada inválida. Escriba True o False.")
+
+codigo_valido = False
+while not codigo_valido:
+    dato = input("¿Tiene un código de descuento especial? (True/False): ")
+    if dato == "True" or dato == "False":
+        tiene_codigo = (dato == "True")
+        codigo_valido = True
+    else:
+        print("Entrada inválida. Escriba True o False.")
 
 descuento_total = 0
 
