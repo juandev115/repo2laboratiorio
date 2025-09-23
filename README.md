@@ -16,4 +16,5 @@ ejercicio_b.py
 ejercicio_c.py
 ejercicio_d.py
 # informe/             
-Laboratorio1.pdf
+Laboratorio final.pdf
+lab.docx
